@@ -1,0 +1,25 @@
+.createProductArea {
+    width: 400px;
+    background-color: lightcoral;
+    padding: 40px 20px;
+}
+
+.createProductArea label {
+    font-size: 2rem;
+}
+
+.createProductArea input {
+    width: 100% !important;
+    font-size: 1.6rem;
+}
+
+.createProductArea textarea {
+    width: 100% !important;
+    font-size: 1.5rem;
+}
+
+.createProductArea button {
+    width: 100%;
+    padding: 4px 0px;
+    font-size: 1.8rem;
+}

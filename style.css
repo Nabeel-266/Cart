@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&family=Macondo&family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&family=Tsukimi+Rounded:wght@300;400;500;600;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    /* position: relative; */
+}
+
+nav {
+    width: 100%;
+    background-color: #353535;
+    padding: 0px 80px !important;
+}
+
+nav header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px !important;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1.8rem;
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul li {
+    /* text-decoration: none; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cart {
+    color: #252525;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+.cart i {
+    color: white;
+}
+
+.cart #cartCounter {
+    position: absolute;
+    top: -10px;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    font-size: 1.2rem;
+    border-radius: 100px;
+    background-color: rgb(255, 46, 46);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.cardsArea {
+    /* height: 100px !important; */
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.card {
+    padding: 0 !important;
+    margin: 10px 0px !important;
+    background-color: #252525 !important;
+    color: white !important;
+    font-family: 'Varela Round', sans-serif;
+    border: 2px solid #252525 !important;
+}
+
+.card img {
+    height: 175px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.card .btnArea {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    /* background-color: lightcoral; */
+}
+
+.btnArea .quantityValue {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eeeeee;
+}
+
+.quantityValue .quantityCounter {
+    font-size: 1.6rem;
+    padding: 5.5px 12px;
+    background-color: #353535;
+    color: white;
+}
+
+.decrementBtn,
+.incrementBtn {
+    margin: 0;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+}
+
+.addToCartBtn {
+    font-size: 1.5rem !important;
+
+}

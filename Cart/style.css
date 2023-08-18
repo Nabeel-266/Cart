@@ -1,0 +1,339 @@
+.subCont {
+    padding: 20px 0px !important;
+}
+
+.cartHD {
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 30px 0px;
+}
+
+.cartHD h1 {
+    font-size: 3rem;
+    color: #353535;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    text-decoration: underline #353535;
+}
+
+.cartArea {
+    width: 100%;
+    /* background-color: darkcyan; */
+}
+
+.cartArea .cartDetails {
+    /* background-color: lightcoral; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.cartCategories {
+    width: 100%;
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
+
+.productHd {
+    width: 50%;
+    /* background-color: blueviolet; */
+    text-align: start;
+    padding: 10px 20px;
+}
+
+.priceHd {
+    width: 16%;
+    /* background-color: greenyellow; */
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.quantityHd {
+    width: 16%;
+    /* background-color: greenyellow; */
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.totalHd {
+    width: 16%;
+    /* background-color: greenyellow; */
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.cartDetails .cartItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+    /* background-color: darkgoldenrod; */
+}
+
+.cartItems .item {
+    min-height: 120px;
+    display: flex;
+    border: 1px solid #dddddd;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+.item .product {
+    max-height: 120px;
+    display: flex;
+    /* background-color: darkgoldenrod; */
+}
+
+.product .prdImage {
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    /* background-color: chartreuse; */
+}
+
+.prdImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px #353533);
+}
+
+.product .prdTitle {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: crimson; */
+}
+
+.product .prdQuantity {
+    /* display: flex; */
+    display: none;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid #353535 !important;
+}
+
+.decrBtn,
+.incrBtn {
+    margin: 0;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    background-color: #fff;
+}
+
+.quantityValue {
+    font-size: 1.6rem;
+    padding: 5.5px 12px;
+    background-color: #fff;
+    color: #353535;
+}
+
+.price,
+.quantity,
+.total {
+    /* height: 100%; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: coral; */
+}
+
+.quantityVal .prdQuantity {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid #bbb !important;
+}
+
+.price p,
+.quantity div,
+.total p {
+    font-size: 1.4rem;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.cancelItemBtn {
+    border: none;
+    outline: none;
+    width: 3% !important;
+    height: 25% !important;
+    /* padding: 2px 4px !important; */
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #414141;
+}
+
+
+.cartArea .cartSummary {
+    height: 0%;
+    /* background-color: lightslategray; */
+    padding: 10px 20px !important;
+    font-family: "Varela Round", sans-serif;
+}
+
+.cartSumHd {
+    padding: 6px 0px;
+    border-bottom: 2px solid #353533;
+}
+
+.cartSumHd h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.cartBill {
+    /* background-color: lightgoldenrodyellow; */
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+
+.subTotalAmount {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6em;
+    padding: 8px 0px;
+}
+
+.totalAmount {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6em;
+    padding: 8px 0px;
+    font-weight: bold;
+}
+
+.cartSummaryButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+    border-top: 1px solid #bbb;
+}
+
+.cartSuggestionBtn1,
+.cartSuggestionBtn2 {
+    width: 100%;
+    padding: 12px 0px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #414141;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* --------------------------> For Media Query <-------------------------- */
+
+/* Mobile Small*/
+@media only screen and (max-width: 375px) {
+    .product .prdQuantity {
+        display: flex;
+    }
+
+    .quantity,
+    .quantityHd,
+    .total,
+    .totalHd {
+        display: none;
+    }
+}
+
+/* ---------------- Mobile Medium ---------------- */
+@media(min-width: 376px) and (max-width: 424px) {
+    .product .prdQuantity {
+        display: flex;
+    }
+
+    .quantity,
+    .quantityHd,
+    .total,
+    .totalHd {
+        display: none;
+    }
+}
+
+/* ---------------- Mobile Large ---------------- */
+@media(min-width: 425px) and (max-width: 500px) {
+    .product .prdQuantity {
+        display: flex;
+    }
+
+    .quantity,
+    .quantityHd,
+    .total,
+    .totalHd {
+        display: none;
+    }
+}
+
+/* ---------------- Small Tablet & Landscape Mobile ---------------- */
+@media(min-width: 501px) and (max-width: 575px) {
+
+    .product .prdQuantity {
+        display: flex;
+    }
+
+    .quantity,
+    .quantityHd,
+    .total,
+    .totalHd {
+        display: none;
+    }
+}
+
+/* ---------------- Tablet ---------------- */
+@media(min-width: 576px) and (max-width: 767px) {
+
+    .total,
+    .totalHd {
+        display: none;
+    }
+}
+
+/* ---------------- Laptop Small ---------------- */
+@media(min-width: 768px) and (max-width: 992px) {}
+
+/* ---------------- Laptop Medium ---------------- */
+@media(min-width: 993px) and (max-width: 1200px) {}
+
+/* Widescreen OR Laptop Large */
+@media(min-width: 1201px) {}
+
+/* Landscape */
+/* @media(max-height: 500px) {
+    body {
+        background: orange;
+    }
+} */
+
+/* For desktop: */
+/* @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+} */
